@@ -19,6 +19,8 @@
 		09FE7A221994C5D20088C881 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FE7A0A1994C5D20088C881 /* UIKit.framework */; };
 		09FE7A2A1994C5D20088C881 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09FE7A281994C5D20088C881 /* InfoPlist.strings */; };
 		09FE7A2C1994C5D20088C881 /* TextViewPlaceHolderDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FE7A2B1994C5D20088C881 /* TextViewPlaceHolderDemoTests.m */; };
+		09FE7A371994C5F50088C881 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FE7A361994C5F50088C881 /* MainViewController.m */; };
+		09FE7A3B1994C6520088C881 /* UITextView+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FE7A3A1994C6520088C881 /* UITextView+PlaceHolder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		09FE7A271994C5D20088C881 /* TextViewPlaceHolderDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextViewPlaceHolderDemoTests-Info.plist"; sourceTree = "<group>"; };
 		09FE7A291994C5D20088C881 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09FE7A2B1994C5D20088C881 /* TextViewPlaceHolderDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewPlaceHolderDemoTests.m; sourceTree = "<group>"; };
+		09FE7A351994C5F50088C881 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		09FE7A361994C5F50088C881 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		09FE7A391994C6520088C881 /* UITextView+PlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PlaceHolder.h"; sourceTree = "<group>"; };
+		09FE7A3A1994C6520088C881 /* UITextView+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PlaceHolder.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +113,13 @@
 		09FE7A0C1994C5D20088C881 /* TextViewPlaceHolderDemo */ = {
 			isa = PBXGroup;
 			children = (
+				09FE7A381994C63A0088C881 /* TextViewPlaceHolder */,
 				09FE7A151994C5D20088C881 /* AppDelegate.h */,
 				09FE7A161994C5D20088C881 /* AppDelegate.m */,
 				09FE7A181994C5D20088C881 /* Images.xcassets */,
 				09FE7A0D1994C5D20088C881 /* Supporting Files */,
+				09FE7A351994C5F50088C881 /* MainViewController.h */,
+				09FE7A361994C5F50088C881 /* MainViewController.m */,
 			);
 			path = TextViewPlaceHolderDemo;
 			sourceTree = "<group>";
@@ -142,6 +151,15 @@
 				09FE7A281994C5D20088C881 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09FE7A381994C63A0088C881 /* TextViewPlaceHolder */ = {
+			isa = PBXGroup;
+			children = (
+				09FE7A391994C6520088C881 /* UITextView+PlaceHolder.h */,
+				09FE7A3A1994C6520088C881 /* UITextView+PlaceHolder.m */,
+			);
+			path = TextViewPlaceHolder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +258,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				09FE7A171994C5D20088C881 /* AppDelegate.m in Sources */,
+				09FE7A371994C5F50088C881 /* MainViewController.m in Sources */,
 				09FE7A131994C5D20088C881 /* main.m in Sources */,
+				09FE7A3B1994C6520088C881 /* UITextView+PlaceHolder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
